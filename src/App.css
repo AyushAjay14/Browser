@@ -1,0 +1,148 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  background-color: beige;
+  width: 60%;
+  height: 82vh;
+}
+.btn {
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  height: 3em;
+  width: 8em;
+  color: white;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-blue {
+  background-color: #0a6cbd;
+}
+.input-box {
+  border-radius: 5px;
+  height: 3em;
+  width: 42.5em;
+  border: 0.1px solid rgb(169, 169, 169);
+}
+.flat-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0 0;
+  padding: 0 1em 0 1em;
+}
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+.filter {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 0px 6px 0 0;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 6px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.broad-container {
+  margin-top: 2em;
+  margin-left: 1em;
+  height: 24em;
+  display: flex;
+  justify-content: space-between;
+}
+.details-container {
+  background-color: white;
+  border-radius: 5px;
+  height: 100%;
+  width: 9em;
+  padding: 0 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.duration {
+  margin-bottom: 2em;
+}
+.title {
+  margin: 1em 0 1em 0;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  margin: 0.7em 0 0 0;
+}
+.form-check-label {
+  margin: 0 0 0 6px;
+}
+.log-container {
+  width: 48em;
+  height: 27em;
+  background-color: white;
+  margin: 0 2em 0 2em;
+  border-radius: 5px;
+  border: 0.1px solid rgb(169, 169, 169);
+}
